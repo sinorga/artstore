@@ -20,3 +20,6 @@
 
 # Ignore rubymine config file
 .idea
+
+
+config/database.yml
