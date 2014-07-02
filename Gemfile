@@ -5,6 +5,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+group :production do
+  gem 'mysql2'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -69,3 +74,12 @@ gem "settingslogic"
 
 #for search product
 gem "ransack"
+
+gem "rvm-capistrano"
+
+group :development do
+  gem 'capistrano', '~> 2.15'
+  gem "capistrano-ext"
+  gem 'capistrano-unicorn', :require => false
+  gem "cape"
+end

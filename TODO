@@ -57,12 +57,19 @@
   ✔ 身為消費者, 能在account/orders看到過去的訂單記錄 @done(2014-06-18 10:45) @project(購物)
   ✔ 身為消費者, 能夠在結賬後自動跳轉到account/orders#index @done(2014-06-18 10:51) @project(購物)
   ✔ 身為消費者, 能夠搜尋標題及價格範圍找到想要的產品 @done(2014-06-26 11:40) @project(購物)
+  ☐ 身為消費者, 能夠在收尋引擎上快速找到網站(SEO)
+  ☐ 身為消費者, 能夠在fb內看到網站相關資訊(Facebook OpenGraph)
 
 
 系統訊息:
   ☐ 身為使用者, 我需要在頁面上看見包含error以外其他種類的通知訊息.
   ☐ 身為使用者, 我需要在頁面上看到詳細的model validate error.
 
+加速:
+
+  ☐ 在有has_many關係的table使用add_index加快收尋速度
+  ☐ 將javascript的load移到頁面最下方
+  ☐ 使用不同的domain分散圖檔下載
 
 重構:
   ✔ 將application.html中的nav bar和error message 用partial抽出 @done(2014-06-14 12:29) @project(Refactoring)
@@ -70,3 +77,8 @@
   ✔ 將加入/移除購物車功能, 轉移到cart_items controller相對應的create/destroy action @done(2014-06-22 10:58) @project(重構)
   ✔ 將card_charges controller內過多的程式碼移出. @done(2014-06-26 09:57) @project(重構)
   ☐ CreditCardService charge 參數用hash 傳入
+
+部署:
+
+  ☐ 身為使用者, 我要在internet上可以瀏覽商店
+    ☐ 使用Capistrano部署網頁
