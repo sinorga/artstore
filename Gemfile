@@ -83,3 +83,5 @@ group :development do
   gem 'capistrano-unicorn', :require => false
   gem "cape"
 end
+
+gem 'dotenv-deployment'
