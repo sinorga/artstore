@@ -84,4 +84,5 @@ group :development do
   gem "cape"
 end
 
+gem 'dotenv'
 gem 'dotenv-deployment'
