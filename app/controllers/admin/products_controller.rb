@@ -5,6 +5,8 @@ class Admin::ProductsController < ApplicationController
 
   def index
     @products = Product.all
+    set_page_title "管理產品"
+    set_page_description "在此管理產品"
   end
 
   def new

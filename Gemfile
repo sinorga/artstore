@@ -84,5 +84,9 @@ group :development do
   gem "cape"
 end
 
+#for set env on production server
 gem 'dotenv'
 gem 'dotenv-deployment'
+
+#for seo
+gem 'seo_helper', '~> 1.0'
