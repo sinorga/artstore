@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140617171148) do
+ActiveRecord::Schema.define(version: 20140705131855) do
 
   create_table "cart_items", force: true do |t|
     t.integer  "cart_id"
@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(version: 20140617171148) do
     t.datetime "updated_at"
     t.integer  "quantity",   default: 0
   end
+
+  add_index "cart_items", ["cart_id"], name: "index_cart_items_on_cart_id"
+  add_index "cart_items", ["product_id"], name: "index_cart_items_on_product_id"
 
   create_table "carts", force: true do |t|
     t.datetime "created_at"
@@ -36,6 +39,8 @@ ActiveRecord::Schema.define(version: 20140617171148) do
     t.datetime "updated_at"
   end
 
+  add_index "order_infos", ["order_id"], name: "index_order_infos_on_order_id"
+
   create_table "order_items", force: true do |t|
     t.string   "product_name"
     t.float    "price"
@@ -44,6 +49,8 @@ ActiveRecord::Schema.define(version: 20140617171148) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "order_items", ["order_id"], name: "index_order_items_on_order_id"
 
   create_table "orders", force: true do |t|
     t.integer  "user_id"
@@ -58,6 +65,7 @@ ActiveRecord::Schema.define(version: 20140617171148) do
 
   add_index "orders", ["aasm_state"], name: "index_orders_on_aasm_state"
   add_index "orders", ["token"], name: "index_orders_on_token"
+  add_index "orders", ["user_id"], name: "index_orders_on_user_id"
 
   create_table "photos", force: true do |t|
     t.integer  "product_id"
@@ -65,6 +73,8 @@ ActiveRecord::Schema.define(version: 20140617171148) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "photos", ["product_id"], name: "index_photos_on_product_id"
 
   create_table "products", force: true do |t|
     t.string   "title"
