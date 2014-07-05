@@ -57,7 +57,7 @@
   ✔ 身為消費者, 能在account/orders看到過去的訂單記錄 @done(2014-06-18 10:45) @project(購物)
   ✔ 身為消費者, 能夠在結賬後自動跳轉到account/orders#index @done(2014-06-18 10:51) @project(購物)
   ✔ 身為消費者, 能夠搜尋標題及價格範圍找到想要的產品 @done(2014-06-26 11:40) @project(購物)
-  ☐ 身為消費者, 能夠在收尋引擎上快速找到網站(SEO)
+  ✔ 身為消費者, 能夠在收尋引擎上快速找到網站(SEO) @done(2014-07-05 08:54) @project(購物)
   ☐ 身為消費者, 能夠在fb內看到網站相關資訊(Facebook OpenGraph)
 
 
@@ -68,7 +68,7 @@
 加速:
 
   ☐ 在有has_many關係的table使用add_index加快收尋速度
-  ☐ 將javascript的load移到頁面最下方
+  ✔ 將javascript的load移到頁面最下方 @done(2014-07-05 08:56)
   ☐ 使用不同的domain分散圖檔下載
 
 重構:
